@@ -5,7 +5,7 @@ import { TranslateReqType } from "./lib/schema";
 
 const app = new Hono();
 
-app.get("/healthcheck", (c) => {
+app.get("/", (c) => {
   return c.text("Hi there, everything is working fine!");
 });
 
